@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+  <header>
+    <link href="{{ url_for('static', filename='css/app.css') }}" rel="stylesheet">
+  </header>
+  <div id="prof">
+    <div id="top">
+      <img id = "pfp" src="{{ url_for('static', filename='thecat.jpg') }}" alt="Profile Pic">
+
+      <h1>Che Hutchinson Serju</h1>
+      <p class="info">@che.h.s</p>
+      <p class="info">Ascalon, Tyria</p>
+      <!-- <p class="info">Joined November 1685</p> -->
+      <p class="info">Joined {{ date }}</p>
+
+    </div>
+    <div id="bottom">
+      <p id="para">
+        I am Charr soldier from the Ascalonian region and imperator of the Frost Legion. My reputation as the strongest 
+        warrior of Bangar Ruinbringer's army results from my time in the great war against King Adelbern of which I overthrew 
+        the Kyrtan empire, utilizing my combat prowess and the legendary sword, Sohothin.
+      </p>
+      <table>
+        <tr>
+          <th>312</th>      <th>1026</th>       <th>87.1M</th>
+        </tr>
+        <tr>
+          <td>Posts</td>    <td>Following</td>  <td>Followers</td>
+        </tr>
+      </table>
+      <button>Folow</button>
+    </div>
+  </div>
+{% endblock %}
